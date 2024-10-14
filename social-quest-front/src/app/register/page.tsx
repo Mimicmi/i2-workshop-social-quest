@@ -2,63 +2,79 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import {
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    Input,
+    Button,
+    Spacer,
+} from "@nextui-org/react";
 import Link from "next/link";
 
 export default function Register() {
     const router = useRouter();
     const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        // Logique d'inscription en dur, redirection vers la page de login
         router.push("/login");
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-            <div className="p-8 bg-white shadow-md rounded-md w-full max-w-md">
-                <h1 className="text-2xl font-bold mb-6 text-center text-black">
-                    Inscrivez-vous sur Social Quest
-                </h1>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">
-                            Pseudonyme
-                        </label>
-                        <input
-                            type="text"
+        <div className="flex items-center justify-center h-screen bg-gray-100">
+            <Card>
+                <CardHeader>
+                    <div>Inscrivez-vous sur Social Quest</div>
+                </CardHeader>
+                <CardBody>
+                    <form onSubmit={handleSubmit}>
+                        <Input
+                            placeholder="Username"
+                            fullWidth
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                             required
                         />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700">
-                            Mot de passe
-                        </label>
-                        <input
-                            type="password"
+                        <Spacer y={1.5} />
+                        <Input
+                            type="email"
+                            placeholder="Email"
+                            fullWidth
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                        <Spacer y={1.5} />
+                        <Input
+                            placeholder="Password"
+                            fullWidth
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                             required
                         />
+                        <Spacer y={1.5} />
+                        <Button type="submit" fullWidth color="primary">
+                            Inscrivez-vous
+                        </Button>
+                    </form>
+                </CardBody>
+                <CardFooter>
+                    <div className="">
+                        Vous avez déjà un compte ?{" "}
+                        <Link
+                            href="/"
+                            className="text-indigo-600 hover:underline"
+                        >
+                            Connectez-vous ici !
+                        </Link>
                     </div>
-                    <button
-                        type="submit"
-                        className="w-full bg-indigo-600 text-white p-2 rounded-md hover:bg-indigo-700"
-                    >
-                        Inscrivez-vous
-                    </button>
-                </form>
-                <p className="text-black">
-                    Vous avez déjà un compte?{" "}
-                    <Link href="/" className="text-indigo-600 hover:underline">
-                        Connectez-vous ici !
-                    </Link>
-                </p>
-            </div>
+                </CardFooter>
+            </Card>
         </div>
     );
 }
