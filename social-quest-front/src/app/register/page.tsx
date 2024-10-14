@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Register() {
     const router = useRouter();
@@ -51,6 +52,12 @@ export default function Register() {
                         Inscrivez-vous
                     </button>
                 </form>
+                <p className="text-black">
+                    Vous avez déjà un compte?{" "}
+                    <Link href="/" className="text-indigo-600 hover:underline">
+                        Connectez-vous ici !
+                    </Link>
+                </p>
             </div>
         </div>
     );
