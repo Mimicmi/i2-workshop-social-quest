@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
     const router = useRouter();
@@ -51,6 +52,15 @@ export default function Home() {
                         Connectez-vous
                     </button>
                 </form>
+                <p className="mt-4 text-center text-black">
+                    Vous n'avez pas de compte?{" "}
+                    <Link
+                        href="/register"
+                        className="text-indigo-600 hover:underline"
+                    >
+                        Enregistrez-vous ici !
+                    </Link>
+                </p>
             </div>
         </div>
     );
