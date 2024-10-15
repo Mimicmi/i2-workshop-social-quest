@@ -51,7 +51,9 @@ export default function Register() {
                         />
                         <Spacer y={1.5} />
                         <Input
-                            placeholder="Password"
+                            label="Password"
+                            type="password"
+                            placeholder="Mot de passe"
                             fullWidth
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
