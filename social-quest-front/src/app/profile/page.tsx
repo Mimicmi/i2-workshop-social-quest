@@ -3,22 +3,24 @@ import {
     Button,
     Card,
     CardBody,
-    CardFooter,
     CardHeader,
     Chip,
     Divider,
 } from "@nextui-org/react";
 import { HiOutlineUserPlus } from "react-icons/hi2";
-import Link from "next/link";
+import { FaBook } from "react-icons/fa";
+import { FaFireFlameCurved } from "react-icons/fa6";
+import { IoMdTrophy } from "react-icons/io";
+import { MdOutlineIncompleteCircle } from "react-icons/md";
 import NavbarComponent from "../navbar/navbarComponent";
 
 export default function Profile() {
     return (
         <>
             <NavbarComponent />
-            <div>
+            <div className="mt-2">
                 <div className="flex justify-center">
-                    <Card className="max-w-[340px]">
+                    <Card style={{ width: "400px" }}>
                         <CardHeader>
                             <div className="flex gap-3 items-center">
                                 <Avatar
@@ -57,7 +59,67 @@ export default function Profile() {
                         </CardBody>
                         <Divider />
                         <CardBody>
-                            <p>test</p>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="flex flex-col items-start border p-3 rounded-lg">
+                                    <div className="flex items-center">
+                                        <FaFireFlameCurved
+                                            className="text-orange-500 mr-2"
+                                            size={24}
+                                        />
+                                        <span className="text-xl font-semibold mb-1">
+                                            5
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400">
+                                        Jours d'affilés
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col items-start border p-3 rounded-lg">
+                                    <div className="flex items-center">
+                                        <IoMdTrophy
+                                            className="text-yellow-400 mr-2"
+                                            size={24}
+                                        />
+                                        <span className="text-xl font-semibold mb-1">
+                                            29
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400">
+                                        Points
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col items-start border p-3 rounded-lg">
+                                    <div className="flex items-center">
+                                        <FaBook
+                                            className="text-blue-500 mr-2"
+                                            size={24}
+                                        />
+                                        <span className="text-xl font-semibold mb-1">
+                                            7
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400">
+                                        Parcours complétés
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col items-start border p-3 rounded-lg">
+                                    <div className="flex items-center">
+                                        <MdOutlineIncompleteCircle
+                                            className="text-blue-400 mr-2"
+                                            size={24}
+                                        />
+                                        <span className="text-xl font-semibold">
+                                            25%
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-400">
+                                        Complétion
+                                    </p>
+                                </div>
+                            </div>
                         </CardBody>
                     </Card>
                 </div>
