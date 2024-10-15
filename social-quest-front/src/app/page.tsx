@@ -32,7 +32,7 @@ export default function Home() {
                 <CardBody>
                     <form onSubmit={handleSubmit}>
                         <Input
-                            placeholder="Username"
+                            placeholder="Pseudonyme"
                             fullWidth
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
@@ -40,7 +40,8 @@ export default function Home() {
                         />
                         <Spacer y={1.5} />
                         <Input
-                            placeholder="Password"
+                            placeholder="Mot de passe"
+                            type="password"
                             fullWidth
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
