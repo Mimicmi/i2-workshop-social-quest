@@ -20,7 +20,7 @@ export default function Home() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        router.push("/dashboard");
+        router.push("/path");
     };
 
     return (

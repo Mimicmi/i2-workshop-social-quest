@@ -21,7 +21,6 @@ export default function Register() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Logique d'inscription en dur, redirection vers la page de login
         router.push("/login");
     };
 
