@@ -1,14 +1,19 @@
-import "./style.scss";
+import { Divider } from "@nextui-org/react";
+import NavbarComponent from "../navbar/navbarComponent";
+import "./style/style.scss";
 
 export default function Path() {
     return (
         <>
+            <NavbarComponent />
             <div className="timeline">
                 <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
                     <div className="timeline__event__icon ">
                         <i className="lni-sport"></i>
                     </div>
-                    <div className="timeline__event__date">September 1985</div>
+                    <div className="timeline__event__date hover:animate">
+                        September 1985
+                    </div>
                     <div className="timeline__event__content ">
                         <div className="timeline__event__title">
                             Super Mario Brothers
