@@ -38,6 +38,13 @@ h1 {
 	font-weight: 10;
 	top: 0;
 }
+.disabled {
+	filter:blur(4px)
+}
+.timeline__event:hover{
+	scale:1.1;
+	box-shadow: 2px 5px 10px #b0861b;
+}
 .timeline {
 	display: flex;
 	flex-direction: column;
