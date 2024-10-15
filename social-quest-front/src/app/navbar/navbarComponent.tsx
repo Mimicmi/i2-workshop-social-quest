@@ -53,7 +53,7 @@ export default function NavbarComponent() {
                                 isBordered
                                 radius="full"
                                 size="md"
-                                src="https://nextui.org/avatars/avatar-1.png"
+                                src="/profile-picture.png"
                             />
                         </Link>
                     </NavbarItem>
