@@ -20,7 +20,6 @@ export default function Home() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Logique de login en dur, redirection vers la page de dashboard
         router.push("/dashboard");
     };
 
