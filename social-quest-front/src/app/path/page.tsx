@@ -12,19 +12,19 @@ export default function Path() {
                         <i className="lni-sport"></i>
                     </div>
                     <div className="timeline__event__date hover:animate">
-                        September 1985
+                        Fishing
                     </div>
                     <div className="timeline__event__content ">
                         <div className="timeline__event__title">
-                            Super Mario Brothers
+                            Identifies les arnaques
                         </div>
                         <div className="timeline__event__description">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Vel, nam! Nam eveniet ut
-                                aliquam ab asperiores, accusamus iure veniam
-                                corporis incidunt reprehenderit accusantium id
-                                aut architecto harum quidem dolorem in!
+                                Dans cette partie on va t'apprendre a identifier
+                                les arnaques et a ne pas tomber dans le piège.
+                                Au travers d'un jeu des 7 différences tu pourra 
+                                identifier les arnaques des vraies messages et ainsi 
+                                passer ce module aisément.
                             </p>
                         </div>
                     </div>
@@ -372,7 +372,7 @@ export default function Path() {
                         </div>
                     </div>
                 </div>
-                <div className="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                <div className="timeline__event disabled animated fadeInUp delay-1s timeline__event--type3">
                     <div className="timeline__event__icon">
                         <i className="lni-sport"></i>
                     </div>
@@ -392,7 +392,7 @@ export default function Path() {
                         </div>
                     </div>
                 </div>
-                <div className="timeline__event animated fadeInUp timeline__event--type1">
+                <div className="timeline__event disabled animated fadeInUp timeline__event--type1">
                     <div className="timeline__event__icon">
                         <i className="lni-sport"></i>
                     </div>
@@ -412,7 +412,7 @@ export default function Path() {
                         </div>
                     </div>
                 </div>
-                <div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                <div className="timeline__event disabled  animated fadeInUp delay-3s timeline__event--type1">
                     <div className="timeline__event__icon ">
                         <i className="lni-sport"></i>
                     </div>
@@ -433,7 +433,7 @@ export default function Path() {
                     </div>
                 </div>
 
-                <div className="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                <div className="timeline__event disabled animated fadeInUp delay-2s timeline__event--type2">
                     <div className="timeline__event__icon">
                         <i className="lni-sport"></i>
                     </div>
@@ -453,7 +453,7 @@ export default function Path() {
                         </div>
                     </div>
                 </div>
-                <div className="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                <div className="timeline__event disabled animated fadeInUp delay-1s timeline__event--type3">
                     <div className="timeline__event__icon">
                         <i className="lni-sport"></i>
                     </div>
@@ -473,7 +473,7 @@ export default function Path() {
                         </div>
                     </div>
                 </div>
-                <div className="timeline__event animated fadeInUp timeline__event--type1">
+                <div className="timeline__event disabled animated fadeInUp timeline__event--type1">
                     <div className="timeline__event__icon">
                         <i className="lni-sport"></i>
                     </div>
