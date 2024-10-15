@@ -18,7 +18,7 @@ export default function NavbarComponent() {
         <>
             <Navbar>
                 <NavbarBrand>
-                    <Link href="/dashboard" className="flex items-center">
+                    <Link href="/path" className="flex items-center">
                         <Image
                             src="/logo-social-quest.jpeg"
                             alt="Logo"
