@@ -44,7 +44,7 @@ export default function NavbarComponent() {
                 <NavbarContent justify="end">
                     <NavbarItem className="lg:flex">
                         <Link href="/chat" className="flex items-center">
-                            <IoIosHelpCircleOutline size={53} />
+                            <IoIosHelpCircleOutline size={47} />
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
