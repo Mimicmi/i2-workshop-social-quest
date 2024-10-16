@@ -34,7 +34,7 @@ export default function Profile() {
                                         Antoine Gillet
                                     </h4>
                                     <h5 className="text-small text-default-500">
-                                        @antoinegillet666lediable
+                                        @antoinegillet
                                     </h5>
                                 </div>
                             </div>
