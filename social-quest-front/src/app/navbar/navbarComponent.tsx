@@ -26,6 +26,9 @@ export default function NavbarComponent() {
                             height={50}
                         />
                     </Link>
+                    <span className="ml-2 text-xl font-semibold">
+                        Social Quest
+                    </span>
                 </NavbarBrand>
                 <NavbarContent className="sm:flex gap-4" justify="center">
                     <NavbarItem>

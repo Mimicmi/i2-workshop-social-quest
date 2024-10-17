@@ -14,92 +14,90 @@ export default function Course() {
     const steps = [
         {
             type: "text",
-            content: `<h3 class="title">Introduction au cours</h3>
-                      <p class="paragraph">Les <strong>réseaux sociaux</strong> sont un outil puissant pour accéder à l'information. 
-                      Mais il est parfois difficile de distinguer le <em>vrai</em> du <em>faux</em>. Dans ce module, nous allons apprendre à 
-                      <strong>identifier les fausses informations</strong>, à comprendre comment elles se propagent et à développer des réflexes pour les éviter.</p>`,
+            content: `<h3 class="title">Bienvenue dans le cours !</h3>
+                      <p class="paragraph">Les <strong>réseaux sociaux</strong> sont super pour trouver des infos. Mais, parfois, il peut être difficile de savoir 
+                      ce qui est <em>vrai</em> ou <em>faux</em>. Dans ce module, on va apprendre à <strong>reconnaître les fausses infos</strong>, 
+                      comprendre comment elles se répandent, et découvrir des astuces pour les éviter.</p>`,
         },
         {
             type: "text",
-            content: `<h3 class="title">Qu'est-ce que la Désinformation ?</h3>
-                      <p class="paragraph">La <strong>désinformation</strong> est la diffusion intentionnelle de fausses informations dans le but de tromper. 
-                      Contrairement à une <em>simple erreur</em>, la désinformation est souvent planifiée et vise à influencer l'opinion publique, 
-                      semer le doute ou provoquer des conflits.</p>`,
+            content: `<h3 class="title">C'est quoi la Désinformation ?</h3>
+                      <p class="paragraph">La <strong>désinformation</strong>, c'est quand quelqu'un partage exprès des fausses infos pour tromper les gens. 
+                      Contrairement à une simple <em>erreur</em>, c'est fait exprès pour influencer les gens, semer le doute, ou créer des disputes.</p>`,
         },
         {
             type: "question",
-            content: `<h4 class="title">Quels éléments vous semblent douteux dans cette image ?</h4>
-                      <p>Analysez les éléments suspects de l'image (exemple : une URL suspecte, un logo mal utilisé, ou un titre sensationnaliste).</p>
-                      <img src="https://via.placeholder.com/150" alt="Fake Article Example" class="image"/>`,
+            content: `<h4 class="title">Qu'est-ce qui te semble bizarre dans cette image ?</h4>
+                      <p>Regarde bien les détails (exemple : un lien bizarre, un logo mal fait, ou un titre qui fait peur).</p>
+                      <img src="/tik_tok.jpeg" width="200" height="300" alt="Exemple d'article bidon" class="image"/>`,
             answers: [
-                "L'URL n'a pas l'air fiable.",
-                "Le titre est trop alarmant.",
-                "L'article semble venir d'une source non officielle.",
-                "Tout semble correct.",
+                "Le lien n'a pas l'air vrai.",
+                "Le titre fait trop peur.",
+                "L'article ne vient pas d'un site officiel.",
+                "Tout a l'air bien.",
             ],
-            correctAnswer: "L'URL n'a pas l'air fiable.",
-            tip: "Pense à vérifier l'URL et le titre. Souvent, les fausses informations sont accompagnées d'URL douteuses ou de titres sensationnalistes.",
+            correctAnswer: "Le lien n'a pas l'air vrai.",
+            tip: "Pense à vérifier le lien et le titre. Souvent, les fausses infos utilisent des liens bizarres ou des titres qui font peur.",
         },
         {
             type: "text",
-            content: `<h3 class="title">Comment la Désinformation se Propage ?</h3>
-                      <p class="paragraph">La désinformation se propage principalement à travers les <strong>partages rapides</strong> et sans vérification 
-                      sur les réseaux sociaux. Certains utilisateurs partagent des articles sans les lire entièrement, et d'autres se laissent 
-                      manipuler par des titres accrocheurs. Il est crucial de <em>vérifier avant de partager</em>.</p>`,
+            content: `<h3 class="title">Comment les Fausses Infos se Propagent ?</h3>
+                      <p class="paragraph">Les fausses infos se répandent surtout quand on <strong>partage rapidement</strong> sans vérifier. 
+                      Parfois, des gens partagent des articles sans même les lire, ou se font avoir par des titres accrocheurs. 
+                      Il est super important de <em>vérifier avant de partager</em> !</p>`,
         },
         {
             type: "question",
-            content: `<h4 class="title">Quelles sont les bonnes pratiques à suivre avant de partager un contenu en ligne ?</h4>`,
+            content: `<h4 class="title">Quelles sont les bonnes habitudes avant de partager quelque chose en ligne ?</h4>`,
             answers: [
-                "Lire l'article entier avant de le partager.",
-                "Vérifier la source de l'information.",
-                "Partager seulement si le titre vous semble fiable.",
-                "Rechercher d'autres sources pour vérifier l'info.",
+                "Lire tout l'article avant de partager.",
+                "Vérifier d'où vient l'info.",
+                "Partager si le titre te semble correct.",
+                "Chercher d'autres sources pour voir si c'est vrai.",
             ],
-            correctAnswer: "Lire l'article entier avant de le partager.",
-            tip: "Il est essentiel de lire tout l'article, vérifier la source et s'assurer que l'information est fiable avant de la partager.",
+            correctAnswer: "Lire tout l'article avant de partager.",
+            tip: "Toujours lire l'article, vérifier d'où vient l'info, et être sûr que c'est vrai avant de partager.",
         },
         {
             type: "text",
-            content: `<h3 class="title">Les Types de Désinformation</h3>
-                      <p class="paragraph">Il existe plusieurs types de <strong>désinformation</strong>, notamment :</p>
+            content: `<h3 class="title">Les Différents Types de Fausses Infos</h3>
+                      <p class="paragraph">Il y a plusieurs types de fausses infos, comme :</p>
                       <ul>
-                        <li><strong>Fake News</strong> : Des articles totalement fabriqués pour manipuler.</li>
-                        <li><strong>Clickbait</strong> : Des titres sensationnels conçus pour attirer des clics.</li>
-                        <li><strong>Deepfakes</strong> : Des vidéos manipulées où les images et sons sont falsifiés pour créer une situation fausse.</li>
+                        <li><strong>Fake News</strong> : Des articles complètement inventés pour manipuler les gens.</li>
+                        <li><strong>Clickbait</strong> : Des titres qui font peur ou qui sont exagérés pour attirer les clics.</li>
+                        <li><strong>Deepfakes</strong> : Des vidéos ou images trafiquées pour faire croire à des choses qui ne sont pas vraies.</li>
                       </ul>`,
         },
         {
             type: "question",
-            content: `<h4 class="title">Quel type de désinformation utilise des images ou vidéos manipulées pour faire croire à une fausse réalité ?</h4>`,
+            content: `<h4 class="title">Quel type de fausse info utilise des images ou des vidéos truquées pour faire croire à des choses fausses ?</h4>`,
             answers: ["Clickbait", "Fake News", "Deepfake"],
             correctAnswer: "Deepfake",
-            tip: "Les deepfakes sont des vidéos ou images modifiées qui peuvent paraître réelles, mais qui sont totalement fausses.",
+            tip: "Les deepfakes sont des vidéos ou images modifiées pour ressembler à la réalité, mais qui sont complètement fausses.",
         },
         {
             type: "text",
-            content: `<h3 class="title">Comment Se Protéger de la Désinformation ?</h3>
-                      <p class="paragraph">Apprendre à identifier les sources fiables, vérifier les informations sur plusieurs sites, 
-                      et utiliser des outils de <strong>vérification des faits</strong> sont des moyens efficaces pour se protéger de la désinformation.</p>`,
+            content: `<h3 class="title">Comment te protéger des Fausses Infos ?</h3>
+                      <p class="paragraph">Pour te protéger des fausses infos, apprends à reconnaître les sources fiables, vérifie les infos sur plusieurs sites, 
+                      et utilise des outils pour <strong>vérifier les faits</strong>. C'est très utile pour éviter de tomber dans le piège.</p>`,
         },
         {
             type: "question",
-            content: `<h4 class="title">Quels réflexes allez-vous adopter suite à cette formation ?</h4>`,
+            content: `<h4 class="title">Quels gestes vas-tu adopter après ce cours ?</h4>`,
             answers: [
                 "Lire les articles en entier.",
-                "Vérifier la source avant de partager.",
-                "Rechercher d'autres sources d'information.",
-                "Tous les précédents.",
+                "Vérifier d'où vient l'info avant de partager.",
+                "Chercher d'autres sources pour vérifier.",
+                "Tout ça à la fois !",
             ],
-            correctAnswer: "Tous les précédents.",
-            tip: "Tous ces réflexes sont importants pour éviter la désinformation : lire les articles, vérifier les sources, et comparer les informations.",
+            correctAnswer: "Tout ça à la fois !",
+            tip: "Ces gestes sont très importants : lire les articles, vérifier les sources, et comparer les infos avant de les partager.",
         },
         {
             type: "text",
-            content: `<h3 class="title">Conclusion du cours</h3>
-                      <p class="paragraph">La <strong>désinformation</strong> est un véritable danger pour nos sociétés connectées. Grâce à ces techniques 
-                      et outils, vous pouvez désormais mieux naviguer sur les réseaux sociaux, partager des informations fiables et 
-                      <em>contribuer à lutter contre les fausses nouvelles</em>.</p>`,
+            content: `<h3 class="title">Bravo, tu as terminé le cours !</h3>
+                      <p class="paragraph">La <strong>désinformation</strong> est un gros problème sur Internet. Mais maintenant, grâce à ces techniques, 
+                      tu sais comment éviter les fausses infos et <em>aider les autres</em> à ne pas tomber dans le piège non plus.</p>`,
         },
     ];
 
