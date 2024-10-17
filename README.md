@@ -1,2 +1,2 @@
 # i2-workshop-social-quest
-c'est bon je suis là
+App made for Workshop of i2 students at EPSI Lyon
