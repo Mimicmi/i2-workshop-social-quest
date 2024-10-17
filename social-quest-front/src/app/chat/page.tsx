@@ -47,8 +47,8 @@ export default function Chat() {
                             {showOptions && (
                                 <div className="flex flex-col gap-2">
                                     <div className="text-lg">
-                                        Il est important d'en parler. Voici ce
-                                        que tu peux faire
+                                        Il est important d&apos;en parler. Voici
+                                        ce que tu peux faire
                                     </div>
 
                                     <Button
@@ -161,7 +161,7 @@ export default function Chat() {
                                 color="primary"
                                 className="hover:bg-blue-600 transition"
                             >
-                                J'ai vu du contenu sensible en ligne
+                                J&apos;ai vu du contenu sensible en ligne
                             </Button>
                             <Button
                                 color="primary"
