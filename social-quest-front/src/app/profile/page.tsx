@@ -15,6 +15,8 @@ import { MdOutlineIncompleteCircle } from "react-icons/md";
 import NavbarComponent from "../navbar/navbarComponent";
 
 export default function Profile() {
+    const days = "Jours d'affilés";
+
     return (
         <>
             <NavbarComponent />
@@ -71,7 +73,7 @@ export default function Profile() {
                                         </span>
                                     </div>
                                     <p className="text-sm text-gray-400">
-                                        Jours d'affilés
+                                        {days}
                                     </p>
                                 </div>
 

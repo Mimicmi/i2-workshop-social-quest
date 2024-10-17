@@ -55,7 +55,7 @@ export default function Home() {
                 </CardBody>
                 <CardFooter>
                     <div className="">
-                        Vous n'avez pas de compte ?{" "}
+                        Vous n&apos;avez pas de compte ?{" "}
                         <Link
                             href="/register"
                             className="text-indigo-600 hover:underline"
